@@ -1,0 +1,5 @@
+baseURL = 'https://traeklabs.com/'
+languageCode = 'en-us'
+title = 'traeklabs | Software Engineering and Productivity'
+
+theme="tracks"

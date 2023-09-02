@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="flex justify-center">
+<div class="mt-32 max-w-screen-md">
+  <div class="text-5xl text-center">{{ .Title }}</div>
+
+  <div class="flex my-10 items-center justify-between">
+    <div class="flex items-center">
+      <img class="h-12 w-12 rounded-full mr-2" src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png" />
+
+      <div>
+        <div class="font-bold">Ashish Acharya</div>
+        <div class="font-light text-sm">Software Engineer</div>
+      </div>
+    </div>
+
+    <div class="font-light text-sm">{{ .ReadingTime }} minutes read</div>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <article class="prose dark:prose-invert max-w-prose prose-lg">
+    {{ .Content }}
+    </article>
+  </div>
+</div>
+</div>
+{{ end }}
